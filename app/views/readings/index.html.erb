@@ -1,0 +1,25 @@
+<div class="page-header">
+  <%= link_to new_reading_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Reading
+  <% end %>
+  <h1>Listing readings</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Temp</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @readings) do |reading| %>
+        <td><%= reading.temp %></td>
+        <td><%= reading.created_at.to_formatted_s(:short) %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>
