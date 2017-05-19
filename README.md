@@ -1,24 +1,3 @@
-# README
+# Therm
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a little rails app that runs on a Raspberry Pi and reads the temperature from a DS18B20 and stores it in the database.
