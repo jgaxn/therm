@@ -12,6 +12,12 @@ class ReadingsController < ApplicationController
   def show
   end
 
+  # GET /readings/current
+  def current
+    @reading = Reading.create_with_temp
+    render :show
+  end
+
   # GET /readings/new
   def new
     @reading = Reading.new
